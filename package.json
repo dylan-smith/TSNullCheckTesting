@@ -1,0 +1,38 @@
+{
+  "name": "azurermappservicedeployment",
+  "version": "1.0.0",
+  "description": "Azure RM App Service Deployment",
+  "main": "lib/xmltest.js",
+  "scripts": {
+    "build": "tsc",
+    "ts": "tsc -v",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "pack": "ncc build",
+    "test": "jest",
+    "all": "npm run build && npm run lint && npm run pack"
+  },
+  "keywords": [
+    "actions",
+    "azure",
+    "deploy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dylan-smith/AzureRmWebAppDeployment.git"
+  },
+  "author": "Dylan Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylan-smith/AzureRmWebAppDeployment/issues"
+  },
+  "homepage": "https://github.com/dylan-smith/AzureRmWebAppDeployment#readme",
+  "dependencies": {
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/xml2js": "^0.4.5",
+    "typescript": "^3.8.3"
+  }
+}
